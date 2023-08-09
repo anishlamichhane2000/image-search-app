@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.image-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
